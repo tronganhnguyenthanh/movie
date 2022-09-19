@@ -1,0 +1,99 @@
+.form-add-movie{
+  width:65%;
+  height:66%;
+  padding:10%;
+  margin-top:9%;
+  margin-left:18%;
+  background-color:black;
+  border-radius:15px;
+}
+
+.btn-save{
+  padding:6px;
+}
+
+.background{
+  width:100%;
+  height:auto;
+  border:1px solid lightgray;
+  background-image:url("../../../public/images/bg-movies.jpeg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top:1%;
+}
+
+.footer{
+  width:100%;
+  height:auto;
+  background-color:black;
+}
+
+.text-footer{
+  padding:19px;
+}
+
+.img-footer{
+  width:3%;
+  border-radius:50%;
+}
+
+.responsive-iphone{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.card{
+  width:100%;
+  height:auto;
+  border:1px solid lightgray;
+}
+
+.image{
+  height:288px;
+}
+
+.image > img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.text-content{
+  font-size:15px;
+}
+
+/* Responsive in Ipad Air */
+@media (max-width:1024px){
+ .img-footer{
+   width:6%;
+ }
+ .responsive-iphone{
+   display:flex;
+   justify-content:center;
+ }
+}
+/* Responsive in Ipad Mini */
+@media (max-width:768px){
+  .img-footer{
+    width:6%;
+   }
+  .responsive-iphone{
+    display:flex;
+    justify-content:center;
+   }
+}
+/* Responsive in Iphone */
+@media (max-width:576px){
+  .form-add-movie{
+    width:80%;
+    height:82%;
+    margin-left:10%;
+    margin-top:18%;
+  }
+  .img-footer{
+    width:10%;
+  }
+  .responsive-iphone{
+    display:none;
+  }
+}
