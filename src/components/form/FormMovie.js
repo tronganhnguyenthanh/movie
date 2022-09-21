@@ -35,7 +35,7 @@ const FormMovie = () => {
      toast.error("Please choose your movie date", {position:"top-center"})
      return false
     }else{
-      axios.post("http://localhost:8080/api/movie/add", data).then((res) => {
+      axios.post("https://movies-film-api.herokuapp.com/api/movie/add", data).then((res) => {
        toast.success(res?.data?.message, {position:"top-center"})
        setTimeout(() => {
         navigate("/movie/list") 

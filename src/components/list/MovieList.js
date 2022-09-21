@@ -8,7 +8,7 @@ const MovieList = () => {
    getListMovies()
   },[])
   const getListMovies = () => {
-   axios.get("http://localhost:8080/api/movie/list").then((res) => {
+   axios.get("https://movies-film-api.herokuapp.com/api/movie/list").then((res) => {
     setMovieList(res?.data)
    })
   }
